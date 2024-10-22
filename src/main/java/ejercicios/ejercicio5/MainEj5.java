@@ -1,12 +1,12 @@
 package ejercicios.ejercicio5;
 
-public class Main {
+public class MainEj5 {
 
     public static void main(String[] args) {
         PilaArray<String> pila = new PilaArray<>();
-        pila.aniadir("Hola");
-        pila.aniadir("Mundo");
-        pila.aniadir("Java");
+        pila.aniadir("Uno");
+        pila.aniadir("Dos");
+        pila.aniadir("Tres");
 
         System.out.println("Pila: " + pila);
         System.out.println("Extraído: " + pila.extraer());

@@ -1,20 +1,10 @@
 package ejercicios.ejercicio4;
 
-import ejercicios.ejercicio3.Matriz;
+import ejercicios.ejercicio3.Ej3;
 
-
-/**
- * Escribe una aplicación que:
- *
- * Cree una matriz de Integer de 4 filas y 2 columnas
- * Rellénala con números consecutivos comenzando por el 1.
- * Muestra por pantalla la matriz.
- * Muestra por pantalla el contenido de la celda en la fila 1, columna 2
- */
-
-public class MatrizV2 {
+public class Ej4 {
     public static void main(String[] args) {
-        Matriz<Integer> matriz = new Matriz<>(4, 2);
+        Ej3<Integer> matriz = new Ej3<>(4, 2);
 
         int value = 1;
         for (int i = 0; i < matriz.filas(); i++) {

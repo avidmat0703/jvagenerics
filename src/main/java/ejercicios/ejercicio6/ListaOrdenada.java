@@ -5,20 +5,6 @@ import java.util.List;
 
 public class ListaOrdenada<E extends Comparable<E>> {
 
-    /**
-     Escribe una clase genérica ListaOrdenada con un tipo parametrizado E que sea Comparable… < E extends Comparable<E>>.... La clase debe tener lo siguiente:
-
-     Un constructor
-     void add(E o) - nota: cuando añado el elemento debería añadirse en el orden adecuado, recuerda que E tiene que implementar Comparable<E>
-     E get(int index)
-     int size()
-     boolean isEmpty()
-     boolean remove(E o)
-     int indexOf(E o)
-     String toString()
-     */
-
-
     private List<E> elementos;
 
     public ListaOrdenada() {

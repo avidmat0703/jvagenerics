@@ -1,6 +1,6 @@
 package ejercicios.ejercicio6;
 
-public class Main {
+public class MainEj6 {
     public static void main(String[] args) {
         ListaOrdenada<Integer> lista = new ListaOrdenada<>();
         lista.add(5);

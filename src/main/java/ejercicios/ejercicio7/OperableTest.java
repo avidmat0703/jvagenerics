@@ -1,18 +1,11 @@
 package ejercicios.ejercicio7;
 
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
-/**
- * Clase de prueba para la interfaz Operable.
- * Realiza pruebas unitarias para verificar que las operaciones aritméticas se realizan correctamente.
- */
+
 public class OperableTest {
 
-    /**
-     * Prueba las operaciones aritméticas de la implementación anónima de la interfaz
-     */
     @Test
     public void testOperable() {
         Operable<Integer> operable = new Operable<>() {
@@ -38,13 +31,13 @@ public class OperableTest {
         };
 
 
-        // Verificamos la  resta
+        // Verificar la  resta
         assertEquals((Integer) 2, operable.restar(3));
-        // Verificamos la multiplicación
+        // Verificar la multiplicación
         assertEquals((Integer) 15, operable.multiplicar(3));
-        // Verificamos la división
+        // Verificar la división
         assertEquals((Integer) 1, operable.dividir(3));
-        // Verificamos la suma
+        // Verificar la suma
         assertEquals(8, (int) operable.sumar(3));
     }
 }

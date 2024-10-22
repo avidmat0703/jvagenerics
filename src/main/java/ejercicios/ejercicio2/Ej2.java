@@ -2,14 +2,13 @@ package ejercicios.ejercicio2;
 
 import java.util.Arrays;
 
-public class PilaArray<T> {
-
+public class Ej2<T> {
 
     public static void main(String[] args) {
-        PilaArray<String> pila = new PilaArray<>(3);
-        pila.aniadir("Hola");
-        pila.aniadir("Mundo");
-        pila.aniadir("Java");
+        Ej2<String> pila = new Ej2<>(3);
+        pila.aniadir("Uno");
+        pila.aniadir("Dos");
+        pila.aniadir("Tres");
 
         System.out.println(pila);
         System.out.println(pila.extraer());
@@ -17,17 +16,11 @@ public class PilaArray<T> {
         System.out.println(pila);
     }
 
-
-    /**
-     * Implementa una pila utilizando como atributos un array genérico y un entero que cuente el número de objetos insertados.
-     * La clase se debe llamar PilaArray y tiene los mismos métodos que la pila del ejercicio anterior.
-     */
-
     private T[] elementos;
     private int contador;
 
 
-    public PilaArray(int capacidad) {
+    public Ej2(int capacidad) {
         this.elementos = (T[]) new Object[capacidad];
         this.contador = 0;
     }
